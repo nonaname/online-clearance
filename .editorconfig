@@ -1,0 +1,12 @@
+root = true
+
+[*.{jade,js,json}]
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.jade]
+indent_size = 2
+
+[*.{js,json}]
+indent_size = 4

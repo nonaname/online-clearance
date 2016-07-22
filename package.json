@@ -1,0 +1,24 @@
+{
+  "name": "sequelize-tutorial",
+  "version": "1.0.0",
+  "description": "Pisay SIP 2016 Course: NodeJS + SQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "node migrations"
+  },
+  "author": "Micah Andrew Bule",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "glob": "^7.0.5",
+    "method-override": "^2.3.6",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1",
+    "pug": "^2.0.0-beta4",
+    "sequelize": "^3.23.6",
+    "sequelize-cli": "^2.4.0"
+  }
+}
