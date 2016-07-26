@@ -10,7 +10,7 @@ var path = require('path');
 
 // Instantiate an app instance
 var app = Express();
-
+app.use(Express.static('./public/'));
 // Set the views directory
 app.set('views', path.join(__dirname, 'views'));
 
@@ -32,7 +32,8 @@ app.use(MethodOverride('_method'));
 // Array of module names to load
 var modules = [
     { name: 'home', path: '/' },
-    'user'
+    'user',
+    'hans'
 ];
 
 // Load the app routes with the corresponding modules

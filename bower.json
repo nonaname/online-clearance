@@ -1,0 +1,20 @@
+{
+  "name": "sequelize-tutorial",
+  "description": "Pisay SIP 2016 Course: NodeJS + SQL",
+  "main": "index.js",
+  "authors": [
+    "Micah Andrew Bule"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

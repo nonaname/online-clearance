@@ -4,7 +4,7 @@ block content
 	form(method="POST")
 		input(type="text" name="first_name" placeholder="First Name" value= selectedUser ? selectedUser.first_name : '')
 		input(type="text" name="last_name" placeholder="Last Name" value= selectedUser ? selectedUser.last_name : '')
-		button(type="submit")= selectedUser ? "Save User" :  "Add User"
+		button.btn.btn-primary(type="submit")= selectedUser ? "Save User" :  "Add User"
 		
 	table
 		thead
