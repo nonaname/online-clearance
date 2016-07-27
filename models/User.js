@@ -1,6 +1,8 @@
 module.exports = function(sequelize, DataTypes) {
-    return sequelize.define('user', {
-        first_name: DataTypes.STRING,
-        last_name: DataTypes.STRING
-    }, { freezeTableName: true });
+	return sequelize.define('user', {
+		type: DataTypes.STRING,
+		username: DataTypes.STRING,
+		password: DataTypes.STRING,
+		referenceID: DataTypes.INTEGER
+	}, { freezeTableName: true });
 }
