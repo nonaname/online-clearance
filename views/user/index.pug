@@ -1,21 +1,12 @@
 extends ../layouts/default
 
 block content
-	form(method="POST")
-		input(type="text" name="first_name" placeholder="First Name" value= selectedUser ? selectedUser.first_name : '')
-		input(type="text" name="last_name" placeholder="Last Name" value= selectedUser ? selectedUser.last_name : '')
-		button(type="submit")= selectedUser ? "Save User" :  "Add User"
-		
-	table
-		thead
-			tr
-				td First Name
-				td Last Name
-				td(colspan="2") Actions
-		tbody
-			each user in users
-				tr
-					td= user.first_name
-					td= user.last_name
-					td: a(href="/user/" + user.id) Edit
-					td: a(href="/user/" + user.id + "/delete") Delete
+    html
+        head
+        body
+            center
+                h1 Online Clearance
+                h4 Insert description in the online clearance and add more stuff to make it long
+                button.btn.btn-primary I am an admin
+                button.btn.btn-info I am a teacher
+                button.btn.btn-success I am a student
