@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-	return sequelize.define('year_level', {
-		info: DataTypes.INTEGER
+	return sequelize.define('subject', {
+		name: DataTypes.STRING
 	}, { freezeTableName: true });
 }

@@ -15,16 +15,8 @@ block content
 						span Subjects 
 						i.toggle.ion-arrow-up-b
 					.list-group.borderless.subject
-						a(href='#').list-group-item Biology
-						a(href='#').list-group-item Chemistry
-						a(href='#').list-group-item Physics
-						a(href='#').list-group-item Trigonometry
-						a(href='#').list-group-item Earth Science
-						a(href='#').list-group-item Computer Science
-						a(href='#').list-group-item Social Science
-						a(href='#').list-group-item English
-						a(href='#').list-group-item Filipino
-						a(href='#').list-group-item PEHM
+						each subject in subjects
+							a(href='#').list-group-item=subject.name
 					h3 
 						i.ion-clipboard 
 						span School Divisions 

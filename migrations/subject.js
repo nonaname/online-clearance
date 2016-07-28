@@ -1,19 +1,19 @@
 module.exports = {
 	up: function(queryInterface, Sequelize) {
 		queryInterface.createTable(
-			'year_level',
+			'subject',
 			{
 				id: {
-					type: Sequelize.INTEGER,
+					type: Sequelize.STRING,
 					primaryKey: true,
 					autoIncrement: true
 				},
-				info: Sequelize.INTEGER
+				name: Sequelize.STRING
 			}
 		);
 	},
 
 	down: function(queryInterface, Sequelize) {
-		queryInterface.dropTable('year_level');
+		queryInterface.dropTable('subject');
 	}
 }

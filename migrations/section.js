@@ -1,18 +1,16 @@
 module.exports = {
 	up: function(queryInterface, Sequelize) {
 		queryInterface.createTable(
-			'user',
+			'section',
 			{
 				id: {
 					type: Sequelize.INTEGER,
 					primaryKey: true,
 					autoIncrement: true
 				},
-				type: Sequelize.STRING,
-				username: Sequelize.STRING,
-				password: Sequelize.STRING,
-				referenceID: Sequelize.INTEGER,
-				isOnline: Sequelize.BOOLEAN,
+				name: Sequelize.STRING,
+				adviser: Sequelize.STRING,
+				year_level: Sequelize.INTEGER,
 				createdAt: Sequelize.DATE,
 				updatedAt: Sequelize.DATE
 			}
@@ -20,6 +18,6 @@ module.exports = {
 	},
 
 	down: function(queryInterface, Sequelize) {
-		queryInterface.dropTable('user');
+		queryInterface.dropTable('section');
 	}
 }
