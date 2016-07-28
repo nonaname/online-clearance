@@ -1,7 +1,7 @@
 extends ../layouts/default
 
 block style
-	link(href="./css/dashboard.css", rel="stylesheet")
+	link(href="/css/dashboard.css", rel="stylesheet")
 
 block content
 	.container
@@ -49,28 +49,14 @@ block content
 						.heading
 							span#headline Requirements:
 							.list-group.borderless.reqs
-								a(href='#').list-group-item 
+								each requirement in requirements
+									a(href="#").list-group-item
+								a(href="#").list-group-item
 									.check
-										i.ion-checkmark 
-									span Requirement #1
-								a(href='#').list-group-item 
-									.check
-										i.ion-checkmark 
-									span Requirement #2
-								a(href='#').list-group-item 
-									.check
-										i.ion-checkmark 
-									span Requirement #3
-								a(href='#').list-group-item 
-									.check
-										i.ion-checkmark 
-									span Requirement #4
-								a(href='#').list-group-item 
-									.check
-										i.ion-checkmark 
-									span Requirement #5
+										i.ion-plus
+									span Add Requirement
 					#more_details.half
 
 		#right
-	script(src="./bower_components/jquery/dist/jquery.min.js")
-	script(src="./js/dashboard.js")
+	script(src="/bower_components/jquery/dist/jquery.min.js")
+	script(src="/js/dashboard.js")

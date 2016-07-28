@@ -12,7 +12,7 @@ router.route('/')
 		}).then(function(users) {
 			user = users[0];
 			if (user) {
-				res.redirect('/student/' + user.dataValues.username);
+				res.redirect('/' + user.dataValues.type + '/' + user.dataValues.username);
 			} else {
 				res.redirect('/login');
 			}

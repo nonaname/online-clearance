@@ -20,7 +20,6 @@ block content
 							i.ion-ios-person
 							span.user_type Student
 					#or OR
-
 			#form_proper
 				input(type='text' placeholder="First Name" name="first_name").half
 				input(type='text' placeholder="Last Name" name="last_name").half
@@ -28,17 +27,12 @@ block content
 				input(type='email' placeholder="Email" name="e_mail")
 				select(required name="year_level").student.half#year
 					option(value="", disabled, selected) Year
-					option(value=7) Grade 7
-					option(value=8) Grade 8
-					option(value=9) Grade 9
-					option(value=10) Grade 10
-					option(value=11) Grade 11
-					option(value=12) Grade 12
+					each year in years
+						option(value=year.id)='Grade' + year.info
 				select(required name="section").student.half#section
 					option(value="", disabled, selected) Section
-					option(value='Dia') Diamond
-					option(value='Eme') Emerald
-					option(value='Sapph') Sapphire
+					each section in sections
+						option(value=section.id)=section.name
 				input(type='password' name="password" placeholder="Password")
 				input(type='password' name="confirm_password" placeholder="Retype your password")
 				#have_acc Already have an account? Login 
