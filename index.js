@@ -32,6 +32,9 @@ app.use(MethodOverride('_method'));
 // Array of module names to load
 var modules = [
     { name: 'home', path: '/' },
+    'login',
+    'signup',
+    { name: 'student_dashboard', path: 'dashboard'},
     'user',
     'signup',
     'login',
