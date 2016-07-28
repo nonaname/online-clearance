@@ -1,6 +1,21 @@
 html
   head
-    title My App
+    title Clyrd: Get your work done!
     link(href="./bower_components/bootstrap/dist/css/bootstrap.min.css", rel="stylesheet")
+    link(href="./bower_components/Ionicons/css/ionicons.min.css", rel="stylesheet")
+    link(href="./css/global.css", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Reem+Kufi|Lilita+One|Oldenburg|Lato", rel="stylesheet")
+    block style
+
   body
-    block content
+   .wrap.nav
+    nav.nav-bar.container
+     #nav-bar-inner
+      .logo CLYRD.
+      ul#links
+       li 
+        a(href="/login") Login
+       li 
+        a(href="/signup") Signup
+   block content
+   script(src="./bower_components/jquery/dist/jquery.min.js")

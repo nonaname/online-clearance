@@ -33,7 +33,9 @@ app.use(MethodOverride('_method'));
 var modules = [
     { name: 'home', path: '/' },
     'user',
-    'hans'
+    'signup',
+    'login',
+    'student'
 ];
 
 // Load the app routes with the corresponding modules
