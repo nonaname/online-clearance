@@ -1,0 +1,49 @@
+extends ../layouts/default
+
+block style
+	link(href="./css/signup.css", rel="stylesheet")
+
+block content
+	.wrap
+		form(method="POST")
+			h2 Choose your account type
+			#acc_type
+				#button_container
+					label(for="user1")
+						input(type='radio', id='user1', name='type', value='teacher').invisible
+						.select
+							i.ion-ios-people
+							span.user_type Teacher
+					label(for="user2")
+						input(type='radio', id='user2', name='type', value='student' checked).invisible
+						.select
+							i.ion-ios-person
+							span.user_type Student
+					#or OR
+
+			#form_proper
+				input(type='text', placeholder="First Name").half
+				input(type='text', placeholder="Last Name").half
+				input(type='text', placeholder="Username")
+				input(type='email', placeholder="Email")
+				select(required).student.half#year
+					option(value="", disabled, selected) Year
+					option(value=7) Grade 7
+					option(value=8) Grade 8
+					option(value=9) Grade 9
+					option(value=10) Grade 10
+					option(value=11) Grade 11
+					option(value=12) Grade 12
+				select(required).student.half#section
+					option(value="", disabled, selected) Section
+					option(value='Dia') Diamond
+					option(value='Eme') Emerald
+					option(value='Sapph') Sapphire
+				input(type='password', placeholder="Password")
+				input(type='password', placeholder="Retype your password")
+				#have_acc Already have an account? Login 
+					a(href="/login") here
+				button(type='submit').btn.btn-primary.submit Sign Up For Free
+				#terms By signing up you agree to our Terms of Service and Privacy Policy. 
+	script(src="./bower_components/jquery/dist/jquery.min.js")
+	script(src="./js/signup_front.js")

@@ -1,0 +1,16 @@
+extends ../layouts/default
+
+block style
+	link(href="./css/signup.css", rel="stylesheet")
+
+block content
+	.wrap
+		form(method="POST")
+			#form_proper
+				input(type='text', placeholder="Username")
+				input(type='password', placeholder="Password")
+				#have_acc Creating a new account? Signup 
+					a(href="/signup") here
+				button(type='submit').btn.btn-primary.submit Login
+	script(src="./bower_components/jquery/dist/jquery.min.js")
+	script(src="./js/signup_front.js")

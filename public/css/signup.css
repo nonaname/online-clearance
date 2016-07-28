@@ -1,0 +1,153 @@
+nav {
+	color: gray;
+}
+
+.wrap.nav {
+	position: relative;
+}
+
+#nav-bar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#links {
+	display: none;
+}
+
+form {
+	width: 512px;
+	box-shadow: 0px 0px 45px -15px;
+	padding: 30px;
+}
+
+#button_container {
+    box-shadow: 0px 8px 13px -8px;
+    border-radius: 5px;
+}
+
+.select {
+	width: 150px;
+	height: 125px;
+	position: relative;
+	text-align: center;
+	background-color: white;
+	color: gray;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+label:nth-of-type(1) .select {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+label:nth-of-type(2) .select {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+input[type="radio"]:checked ~ .select {
+	background-color: #001052;
+	color: white;
+}
+
+select:required:invalid {
+  color: #a9a9a9;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+option {
+  color: black;
+}
+
+.select > i {
+	font-size: 100px;
+}
+
+#form_proper {
+	margin-top: 25px;
+}
+
+.select:hover {
+	background-color: #286090;
+	color: white;
+	transition: background-color 0.2s ease;
+}
+
+.toggle > i {
+	text-shadow: 0 0 10px rgba(200,200,200,0.5)
+}
+
+.user_type {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 15px;
+}
+
+#acc_type {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+#or {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	color: gray;
+	font-weight: bold;
+	padding: 3px 5px;
+	background-color: white;
+	width: 35px;
+	text-align: center;
+	border-radius: 2px;
+    box-shadow: 0 10px 20px -10px black;
+	height: fit-content;
+}
+
+input.invisible {
+	position: absolute;
+}
+
+.btn.btn-primary.submit {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 18px 0;
+    margin-top: 30px;
+}
+
+#have_acc, #terms {
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#terms {
+	font-size: 12.8px;
+	font-style: italic;
+	color: gray;
+}
+
+#have_acc > a {
+	color: #286090;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#have_acc > a:hover {
+	color: green;
+	cursor: pointer;
+	text-decoration: underline;
+}

@@ -1,0 +1,157 @@
+header {
+	min-height: 680px;
+	background: url(../images/hero.jpg);
+	font-family: "Oldenburg";
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header .container {
+	font-size: 56px;
+	text-align: center;
+	color: white;
+}
+
+#short {    
+	height: 150px;
+    background-color: #5290ea;
+}
+
+#caption {
+	color: white;
+	text-align: center;
+	font-family: "Lilita One";
+	text-shadow: 0 3px 5px rgba(0,0,0,0.4);
+	font-size: 32px;
+}
+
+#profile_part {
+	margin-top: 85px;
+	text-align: center;
+	position: relative;
+}
+
+#profile_part > #icon {
+	font-size: 30px;
+    height: 30px;
+}
+
+#profile_part > #icon > i {
+	z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#profile_part > #icon::before {
+	content: " ";
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    right: 0;
+    top: -30px;
+    bottom: 0;
+    margin: auto;
+    height: 28px;
+    border-radius: 50%;
+    width: 28px;
+    background-color: white;
+}
+
+#profile_part::before {
+    content: " ";
+    top: 11px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    width: 400px;
+    height: 7px;
+    background-color: #666;
+}
+
+.capt {
+	margin-top: 105px;
+}
+
+.capt > p {
+	margin-top: 20px;
+	color: rgb(120,120,120);
+	font-size: 18px;
+	line-height: 30px;
+	width: 515px;
+}
+
+#user_avatar {
+	height: 125px;
+    width: 125px;
+    border: 5px solid white;
+    box-shadow: 0px 15px 30px -20px;
+    background: url(../images/student_avatar.jpg);
+    background-size: cover;
+    background-position-y: -20px;
+    position: absolute;
+    top: 195px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.image {
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+	padding: 0;
+    box-shadow: 0 -10px 50px -20px;
+}
+
+#accessibility {
+	background-color: rgb(240,240,240);
+}
+
+#title {
+    font-family: "Reem Kufi";
+    position: absolute;
+    top: 0;
+    color: #001052;
+    padding: 20px 30px 30px 30px;
+    height: 65px;
+    width: 100%;
+}
+
+#cover_photo {    
+	width: 100%;
+    height: 250px;
+    background: url(../images/student_cover.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+span#heading {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.menu_icon {
+	font-size: 30px;
+	float: right;
+}
+
+.pl-55 {
+	padding-left: 55px;
+}
+
+.pl-100 {
+	padding-left: 100px;
+}
+
+h2 {
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-family: Helvetica;
+	font-weight: bold;
+}

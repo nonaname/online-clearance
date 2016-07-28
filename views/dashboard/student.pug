@@ -1,0 +1,84 @@
+extends ../layouts/default
+
+block style
+	link(href="./css/dashboard.css", rel="stylesheet")
+
+block content
+	.container
+		#left
+			#user
+			#navigation
+				.title Navigation
+				#requirements
+					h3 
+						i.ion-ios-bookmarks 
+						span Subjects 
+						i.toggle.ion-arrow-up-b
+					.list-group.borderless.subject
+						a(href='#').list-group-item Biology
+						a(href='#').list-group-item Chemistry
+						a(href='#').list-group-item Physics
+						a(href='#').list-group-item Trigonometry
+						a(href='#').list-group-item Earth Science
+						a(href='#').list-group-item Computer Science
+						a(href='#').list-group-item Social Science
+						a(href='#').list-group-item English
+						a(href='#').list-group-item Filipino
+						a(href='#').list-group-item PEHM
+					h3 
+						i.ion-clipboard 
+						span School Divisions 
+						i.toggle.ion-arrow-up-b
+					.list-group.borderless
+						a(href='#').list-group-item Discipline Office
+						a(href='#').list-group-item Infirmary
+						a(href='#').list-group-item CISD
+						a(href='#').list-group-item SSD
+						a(href='#').list-group-item Cashier's Office
+						a(href='#').list-group-item Registrar's Office
+						a(href='#').list-group-item Supply Office
+			#friends
+				.title Friends
+				.list-group.borderless#chat
+						a(href='#').list-group-item Carlo Fornoles
+						a(href='#').list-group-item Hans Olano
+						a(href='#').list-group-item CJ Bercasio
+						a(href='#').list-group-item Bani Blaguer
+						a(href='#').list-group-item June Domingo
+						a(href='#').list-group-item Marco Padillo
+						a(href='#').list-group-item Mico Bule
+		.main
+			#sub_name
+				#subject
+			.content
+				#cover
+				#information
+					#requirements_list.half
+						.heading
+							span#headline Requirements:
+							.list-group.borderless.reqs
+								a(href='#').list-group-item 
+									.check
+										i.ion-checkmark 
+									span Requirement #1
+								a(href='#').list-group-item 
+									.check
+										i.ion-checkmark 
+									span Requirement #2
+								a(href='#').list-group-item 
+									.check
+										i.ion-checkmark 
+									span Requirement #3
+								a(href='#').list-group-item 
+									.check
+										i.ion-checkmark 
+									span Requirement #4
+								a(href='#').list-group-item 
+									.check
+										i.ion-checkmark 
+									span Requirement #5
+					#more_details.half
+
+		#right
+	script(src="./bower_components/jquery/dist/jquery.min.js")
+	script(src="./js/dashboard.js")
