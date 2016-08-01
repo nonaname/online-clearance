@@ -35,9 +35,8 @@ var modules = [
     'login',
     'signup',
     'user',
-    'signup',
-    'login',
-    'student'
+    'student',
+    'teacher'
 ];
 
 // Load the app routes with the corresponding modules

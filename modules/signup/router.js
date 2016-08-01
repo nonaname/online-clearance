@@ -21,6 +21,7 @@ router.route('/')
 		// check if username is unique
 		// check if password matches confirm_password
 		// check if data is within the character range
+		console.log(req.body)
 		if (req.body.password === req.body.confirm_password) {
 			models[req.body.type].create(req.body).then(function() {
 				models[req.body.type].findAll({

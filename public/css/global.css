@@ -7,19 +7,45 @@ body, html {
     background-color: #ffffff;
 }
 
-@media (min-width: 1200px)
-.container, nav {
-    width: 1170px;
+@media (min-width: 970px) {
+
+	*.half {
+		width: 49%;
+	}
+
+	*.half:nth-child(2) {
+		margin-top: 0px;
+	}
+
+	input.half:nth-child(2) {
+		margin-top: 5px;
+	}
 }
 
-@media (min-width: 992px)
-.container, nav {
-    width: 970px;
+@media (max-width: 970px) {
+	.container, nav {
+	    width: 100%;
+	}
 }
 
-@media (min-width: 768px)
-.container {
-    width: 750px;
+@media only screen and (max-width: 1136px) {
+	*.half {
+		width: 100%;
+	}
+
+	*.half:nth-child(2) {
+		margin-top: 20px;
+	}
+
+	#right {
+		display: none;
+	}
+}
+
+@media (max-width: 768px){
+	.container {
+	    width: 750px;
+	}
 }
 
 section, header {
@@ -86,15 +112,11 @@ input.half, select.half {
 	width: 49%;
 }
 
-*.half {
-	width: 49%;
-}
-
-input.half:nth-child(1) {
+*.half:nth-child(1) {
 	float: left;
 }
 
-input.half:nth-child(1) {
+*.half:nth-child(2) {
 	float: right;
 }
 

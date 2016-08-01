@@ -25,11 +25,11 @@ block content
 				input(type='text' placeholder="Last Name" name="last_name").half
 				input(type='text' placeholder="Username" name="username")
 				input(type='email' placeholder="Email" name="e_mail")
-				select(required name="year_level").student.half#year
+				select(name="year_level").student.half#year
 					option(value="", disabled, selected) Year
 					each year in years
 						option(value=year.id)='Grade' + year.info
-				select(required name="section").student.half#section
+				select(name="section").student.half#section
 					option(value="", disabled, selected) Section
 					each section in sections
 						option(value=section.id)=section.name

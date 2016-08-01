@@ -10,11 +10,19 @@ $(document).ready(function () {
 			$(this).find("i").removeClass('ion-arrow-down-b');
 			$(this).find("i").addClass('ion-arrow-up-b');
 		}
+		$('.active').removeClass("active");
+		$(".content").fadeOut(500);
+		$("#subject").html("");
 	});
 
-	$('.list-group.borderless.subject > .list-group-item').click(function (){
+	if ($("#subject").html() == "") {
+		$(".content").hide();
+	}
+
+	$('.list-group.borderless.signatories > .list-group-item').click(function (){
 		$('.active').removeClass("active");
 		$(this).addClass("active");
 		$("#subject").html($(this).html());
+		$(".content").fadeIn(500);
 	});
 })

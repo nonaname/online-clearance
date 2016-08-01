@@ -14,14 +14,22 @@ block content
 						i.ion-ios-bookmarks 
 						span Subjects 
 						i.toggle.ion-arrow-up-b
-					.list-group.borderless.subject
-						each subject in subjects
-							a(href='#').list-group-item=subject.name
+					.list-group.borderless.signatories
+						a(href='#').list-group-item Biology
+						a(href='#').list-group-item Chemistry
+						a(href='#').list-group-item Physics
+						a(href='#').list-group-item Trigonometry
+						a(href='#').list-group-item Earth Science
+						a(href='#').list-group-item Computer Science
+						a(href='#').list-group-item Social Science
+						a(href='#').list-group-item English
+						a(href='#').list-group-item Filipino
+						a(href='#').list-group-item PEHM
 					h3 
 						i.ion-clipboard 
 						span School Divisions 
 						i.toggle.ion-arrow-up-b
-					.list-group.borderless
+					.list-group.borderless.signatories
 						a(href='#').list-group-item Discipline Office
 						a(href='#').list-group-item Infirmary
 						a(href='#').list-group-item CISD
@@ -29,6 +37,7 @@ block content
 						a(href='#').list-group-item Cashier's Office
 						a(href='#').list-group-item Registrar's Office
 						a(href='#').list-group-item Supply Office
+						a(href='#').list-group-item Canteen
 			#friends
 				.title Friends
 				.list-group.borderless#chat
@@ -56,7 +65,28 @@ block content
 										i.ion-plus
 									span Add Requirement
 					#more_details.half
-
+						#description_title Description
+						#description This is what you should do.
 		#right
+			#profile
+				.dropdown
+					button.btn.btn-primary.dropdown-toggle.actions#logout(type="button", data-toggle="dropdown")
+						i.ion-gear-a
+						span.caret
+					ul.dropdown-menu
+						li.dropdown-header You
+						li
+							a(href="#") Profile
+						li
+							a(href="#") Notifications
+						li
+							a(href="#") Logout
+						li.divider
+						li.dropdown-header Us
+						li
+							a(href="#") About Us
+				#avatar
+				button.btn.btn-primary.actions
+					i.ion-chatbubbles
 	script(src="/bower_components/jquery/dist/jquery.min.js")
 	script(src="/js/dashboard.js")
